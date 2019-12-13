@@ -14,5 +14,13 @@ pipeline {
                 }
             }
         }
+        stage ('Test Unit') {
+            steps {
+                echo 'Testando Unidade'
+                dir ("$projectProva") {
+                    sh './gradlew test'
+                }
+            }
+        }
     }
 }
