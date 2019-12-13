@@ -33,7 +33,7 @@ pipeline {
         stage ('Arquivar APK') {
             steps {
                 echo '.apk arquivado com Sucesso'
-                archiveArtifacts artifatcs: '**/app-release-unsigned.apk', fingerprint: true, allowEmptyArchive: false
+                archiveArtifacts artifacts: '**/app-release-unsigned.apk', fingerprint: true, allowEmptyArchive: false
             }
         }
     }
