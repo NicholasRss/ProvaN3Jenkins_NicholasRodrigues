@@ -14,4 +14,14 @@ public class ExampleUnitTest {
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
     }
+
+    @Test
+    public void validacaoNull() {
+        assertNull(0);
+    }
+
+    @Test
+    public void diferenteTextoNull() {
+        assertNotNull(0);
+    }
 }
