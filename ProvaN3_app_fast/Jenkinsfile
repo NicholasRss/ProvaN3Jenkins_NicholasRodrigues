@@ -30,5 +30,11 @@ pipeline {
                 }
             }
         }
+        stage ('Arquivar APK') {
+            steps {
+                echo '.apk arquivado com Sucesso'
+                archiveArtifacts artifacs: '**/app-release-unsigned.apk', fingerprint: true, allowEmptyArchive: false
+            }
+        }
     }
 }
