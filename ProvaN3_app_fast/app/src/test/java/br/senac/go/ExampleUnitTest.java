@@ -22,6 +22,6 @@ public class ExampleUnitTest {
 
     @Test
     public void diferenteTextoNull() {
-        assertNotNull(0);
+        assertNotNull(2);
     }
 }
