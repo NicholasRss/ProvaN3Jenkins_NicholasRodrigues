@@ -1,11 +1,17 @@
 pipeline {
 
     agent any
+    environment {
+        projectProva = "$WORKSPACE/ProvaN3_app_fast"
+    }
 
     stages {
         stage ('Preparando Ambiente') {
             steps {
                 echo 'Construindo ambiente wrapper'
+                dir ("$projectProva") {
+                    sh 'gradle wrapper'
+                }
             }
         }
     }
