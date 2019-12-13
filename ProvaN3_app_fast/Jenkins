@@ -1,0 +1,12 @@
+pipeline {
+
+    agent any
+
+    stages {
+        stage ('Preparando Ambiente') {
+            steps {
+                echo 'Construindo ambiente wrapper'
+            }
+        }
+    }
+}
